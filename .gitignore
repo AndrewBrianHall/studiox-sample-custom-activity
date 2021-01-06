@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Development scripts
+scripts/debug-deploy.cmd
+
 # User-specific files
 *.rsuser
 *.suo
@@ -17,6 +20,7 @@
 mono_crash.*
 
 # Build results
+Output/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

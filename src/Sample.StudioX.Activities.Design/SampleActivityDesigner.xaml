@@ -1,0 +1,28 @@
+﻿<sap:ActivityDesigner x:Class="Sample.StudioX.Activities.Design.SampleActivityDesigner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+             xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+             xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Sample.StudioX.Activities.Design"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="400">
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary>
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+    <Grid Style="{StaticResource ActivityPresenter}">
+        <StackPanel>
+            <Label Content="Message" />
+            <sapv:ExpressionTextBox Margin="0,5,0,0" OwnerActivity="{Binding Path=ModelItem}" ExpressionType="s:String"
+                  HintText="Message to log" Expression="{Binding Path=ModelItem.Message, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In, Mode=TwoWay}"></sapv:ExpressionTextBox>
+        </StackPanel>
+    </Grid>
+</sap:ActivityDesigner>
