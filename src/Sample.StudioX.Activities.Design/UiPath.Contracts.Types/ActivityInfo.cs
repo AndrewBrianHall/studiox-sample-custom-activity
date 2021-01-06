@@ -9,7 +9,7 @@ namespace UiPath.Shared.Activities
     /// <summary>
     /// Convention class, copied in each of the activity packages
     /// Used to associate metadata to activities, without referencing a contract assembly
-    /// !! Please do not modify namespace or class name
+    /// !! Do not modify namespace or class name
     /// </summary>
     [AttributeUsage(AttributeTargets.Class)]
     internal class ActivityInfoAttribute : Attribute
