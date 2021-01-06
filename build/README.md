@@ -1,0 +1,1 @@
+UiPath.Activities.Contracts.dll is part of every UiPath Studio/StudioX installation. A copy is included in this repo so the sample will build, but if creating your own custom activity you should use a copy from an official StudioX installation of the lowest version you plan to target.
