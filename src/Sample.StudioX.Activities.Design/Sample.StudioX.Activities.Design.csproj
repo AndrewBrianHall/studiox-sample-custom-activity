@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="MetaDataProvider.cs" />
     <Compile Include="PackageInfoClasses.cs" />
+    <Compile Include="Resources.cs" />
     <Compile Include="SampleActivityDesigner.xaml.cs">
       <DependentUpon>SampleActivityDesigner.xaml</DependentUpon>
     </Compile>
