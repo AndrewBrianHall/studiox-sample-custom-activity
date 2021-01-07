@@ -2,10 +2,10 @@
 {
     internal class Resources
     {
-        public const string CategoryColor = "#B4009E";
         public const string ActivityCategory = "Sample";
-        public const string StudioXCategoryLabel = "Sample";
-        public const string StudioXCategoryDescription = "Sample custom activities";
+        public const string CategoryColor = "#B4009E";
         public const string SampleActivityDisplayName = "Sample Activity";
+        public const string StudioXCategoryDescription = "Sample custom activities";
+        public const string StudioXCategoryLabel = "Sample";
     }
 }
