@@ -2,11 +2,11 @@
 This repo contians a simple custom Workflow activity that can be used in UiPath Studio and StudioX. The purpose of this repo is to demonstrate how to create a custom category in StudioX if needed.
 
 ## Basics
-Creating a custom activity for StudioX works basically the same way it does for Studio as covered in [Creating a Custom Activity](https://docs.uipath.com/activities/docs/creating-a-custom-activity)
+Creating a custom activity for StudioX works the same way it does for Studio as covered in [Creating a Custom Activity](https://docs.uipath.com/activities/docs/creating-a-custom-activity)
 
 A few guidelines for ensuring StudioX users will be successful with your activity:
-- Assume that the user will not find properties not present in the designer unless instructed to do so. This means all commonly used properties should be placed into the designer.
-- StudioX only gives users the ability to define basic types (String and Numbers). So if you expect the user to create the input to an activity themselves, design the activity to accept these types. For example, you should next expect the user to define an array and provide it as input. If your activity requires an array as input, consider allowing the user to create a delimited list and then convert it to an array in the activity (you can see an example of this in the "Input Dialog" activity added in 20.10 for the "Multiple Choice" input type. The user provides ; delimited text and the activity converts this to an array for them at runtime).
+- Assume that the user will not find properties not present in the Properties panel unless instructed to do so. This means all commonly used properties should be placed into the designer.
+- StudioX only gives users the ability to define basic types (e.g. String and Numbers). So if you expect the user to create the input to an activity themselves, design the activity to accept these types. For example, you should next expect the user to define an array and provide it as input. If your activity requires an array as input, consider allowing the user to create a delimited list and then convert it to an array in the activity (you can see an example of this in the "Input Dialog" activity added in StudioX 20.10 for the "Multiple Choice" input type. The user provides ; delimited text and the activity converts this to an array for them at runtime).
 - StudioX is capable of saving any output type using "Save for Later" and then will allow the user to provide it as input to future activities. So if one activity needs to return a complex type that will serve as input for another activity, this should be fine.
 
 ## Registering A Custom Category in StudioX
